@@ -7,7 +7,7 @@ class Question(models.Model):
     question_text = models.CharField('问题内容',max_length=20)
     pub_date = models.DateTimeField('发布时间')
 
-    def __str__(self):
+    def __str__(self):          #（了解）控制打印对象时的输出信息
         return self.question_text
 
     def was_published_recently(self):
